@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Devplay</Name>
+    <RootNamespace>Reminder</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e1807127-796d-4d46-85b3-44aa0c40856c</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="config\passport.js" />
+    <Compile Include="controllers\api.js" />
+    <Compile Include="controllers\contact.js" />
+    <Compile Include="controllers\home.js" />
+    <Compile Include="controllers\user.js" />
+    <Compile Include="models\User.js" />
+    <Compile Include="public\js\lib\bootstrap.min.js" />
+    <Compile Include="public\js\lib\jquery-3.1.1.min.js" />
+    <Compile Include="public\js\main.js" />
+    <Content Include="package.json" />
+    <Content Include="public\css\lib\bootstrap-social.scss" />
+    <Content Include="public\css\lib\bootstrap\bootstrap.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_alerts.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_buttons.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_center-block.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_forms.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_gradients.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_grid.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_image.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_labels.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_list-group.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_opacity.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_pagination.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_panels.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_resize.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_size.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_table-row.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="public\css\lib\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="public\css\lib\bootstrap\_alerts.scss" />
+    <Content Include="public\css\lib\bootstrap\_badges.scss" />
+    <Content Include="public\css\lib\bootstrap\_breadcrumbs.scss" />
+    <Content Include="public\css\lib\bootstrap\_button-groups.scss" />
+    <Content Include="public\css\lib\bootstrap\_buttons.scss" />
+    <Content Include="public\css\lib\bootstrap\_carousel.scss" />
+    <Content Include="public\css\lib\bootstrap\_close.scss" />
+    <Content Include="public\css\lib\bootstrap\_code.scss" />
+    <Content Include="public\css\lib\bootstrap\_component-animations.scss" />
+    <Content Include="public\css\lib\bootstrap\_dropdowns.scss" />
+    <Content Include="public\css\lib\bootstrap\_forms.scss" />
+    <Content Include="public\css\lib\bootstrap\_glyphicons.scss" />
+    <Content Include="public\css\lib\bootstrap\_grid.scss" />
+    <Content Include="public\css\lib\bootstrap\_input-groups.scss" />
+    <Content Include="public\css\lib\bootstrap\_jumbotron.scss" />
+    <Content Include="public\css\lib\bootstrap\_labels.scss" />
+    <Content Include="public\css\lib\bootstrap\_list-group.scss" />
+    <Content Include="public\css\lib\bootstrap\_media.scss" />
+    <Content Include="public\css\lib\bootstrap\_mixins.scss" />
+    <Content Include="public\css\lib\bootstrap\_modals.scss" />
+    <Content Include="public\css\lib\bootstrap\_navbar.scss" />
+    <Content Include="public\css\lib\bootstrap\_navs.scss" />
+    <Content Include="public\css\lib\bootstrap\_normalize.scss" />
+    <Content Include="public\css\lib\bootstrap\_pager.scss" />
+    <Content Include="public\css\lib\bootstrap\_pagination.scss" />
+    <Content Include="public\css\lib\bootstrap\_panels.scss" />
+    <Content Include="public\css\lib\bootstrap\_popovers.scss" />
+    <Content Include="public\css\lib\bootstrap\_print.scss" />
+    <Content Include="public\css\lib\bootstrap\_progress-bars.scss" />
+    <Content Include="public\css\lib\bootstrap\_responsive-embed.scss" />
+    <Content Include="public\css\lib\bootstrap\_responsive-utilities.scss" />
+    <Content Include="public\css\lib\bootstrap\_scaffolding.scss" />
+    <Content Include="public\css\lib\bootstrap\_tables.scss" />
+    <Content Include="public\css\lib\bootstrap\_theme.scss" />
+    <Content Include="public\css\lib\bootstrap\_thumbnails.scss" />
+    <Content Include="public\css\lib\bootstrap\_tooltip.scss" />
+    <Content Include="public\css\lib\bootstrap\_type.scss" />
+    <Content Include="public\css\lib\bootstrap\_utilities.scss" />
+    <Content Include="public\css\lib\bootstrap\_variables.scss" />
+    <Content Include="public\css\lib\bootstrap\_wells.scss" />
+    <Content Include="public\css\lib\font-awesome\font-awesome.scss" />
+    <Content Include="public\css\lib\font-awesome\_animated.scss" />
+    <Content Include="public\css\lib\font-awesome\_bordered-pulled.scss" />
+    <Content Include="public\css\lib\font-awesome\_core.scss" />
+    <Content Include="public\css\lib\font-awesome\_fixed-width.scss" />
+    <Content Include="public\css\lib\font-awesome\_icons.scss" />
+    <Content Include="public\css\lib\font-awesome\_larger.scss" />
+    <Content Include="public\css\lib\font-awesome\_list.scss" />
+    <Content Include="public\css\lib\font-awesome\_mixins.scss" />
+    <Content Include="public\css\lib\font-awesome\_path.scss" />
+    <Content Include="public\css\lib\font-awesome\_rotated-flipped.scss" />
+    <Content Include="public\css\lib\font-awesome\_screen-reader.scss" />
+    <Content Include="public\css\lib\font-awesome\_stacked.scss" />
+    <Content Include="public\css\lib\font-awesome\_variables.scss" />
+    <Content Include="public\css\main.scss" />
+    <Content Include="public\css\themes\default\_default.scss" />
+    <Content Include="public\css\themes\default\_variables.scss" />
+    <Content Include="public\css\themes\flatly\_flatly.scss" />
+    <Content Include="public\css\themes\flatly\_variables.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_buttons.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_inputs.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_labels.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_navbars.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_tabs.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_transparency.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\mixins\_vendor-prefixes.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_alerts.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_buttons.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_carousel.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_collapse.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_dropdown.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_inputs.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_labels-and-progress-bars.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_misc.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_mixins.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_modal.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_navbars.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_responsive.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_sliders.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_social-buttons.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_tabs-navs-pagination.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_tooltips.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_typography.scss" />
+    <Content Include="public\css\themes\gsdk\gsdk\_variables.scss" />
+    <Content Include="public\css\themes\modern\_modern.scss" />
+    <Content Include="public\css\themes\modern\_variables.scss" />
+    <Content Include="public\favicon.png" />
+    <Content Include="public\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\fonts\FontAwesome.otf" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="README.md" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="config\" />
+    <Folder Include="controllers\" />
+    <Folder Include="models\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\css\lib\" />
+    <Folder Include="public\css\lib\bootstrap\" />
+    <Folder Include="public\css\lib\bootstrap\mixins\" />
+    <Folder Include="public\css\lib\font-awesome\" />
+    <Folder Include="public\css\themes\" />
+    <Folder Include="public\css\themes\default\" />
+    <Folder Include="public\css\themes\flatly\" />
+    <Folder Include="public\css\themes\gsdk\" />
+    <Folder Include="public\css\themes\gsdk\gsdk\" />
+    <Folder Include="public\css\themes\gsdk\gsdk\mixins\" />
+    <Folder Include="public\css\themes\modern\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\js\lib\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="bin\node.cmd" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
