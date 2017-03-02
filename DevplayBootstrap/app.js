@@ -25,7 +25,7 @@ const upload = multer({ dest: path.join(__dirname, 'uploads') });
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
-dotenv.load({ path: '.env.PRODUCTION' });
+dotenv.load({ path: 'env.PRODUCTION' });
 
 /**
  * Controllers (route handlers).
@@ -60,7 +60,7 @@ mongoose.connection.on('error', () => {
  */
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.use(expressStatusMonitor());
 app.use(compression());
 app.use(sass({

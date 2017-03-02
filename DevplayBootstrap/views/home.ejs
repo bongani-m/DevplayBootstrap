@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the generated HTML file of the demo page -->
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>devstrap</title>
+
+    <link rel="stylesheet" href="css/devstrap.min.css?0.0.1" />
+    <script src="js/vendor/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    
+        <nav class="navbar navbar-default">
+            <div class="navbar-global color-bg-dark-neutral-mid theme-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="glyph glyph-hamburger"></i>
+                        </button>
+    
+                        <a href="#" class="navbar-brand">
+                            <img src="images/devplay_logo.svg" alt="Microsoft" height="23" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="colors.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Store <i class="glyph glyph-chevron-down-2"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="colors.html">Store home</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="colors.html#bootstrap-colors">Devices</a></li>
+                                    <li><a href="colors.html#mdl-colors">Software</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Apps</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Games</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Entertainment</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Business &amp; education</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Sale</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Find a store</a></li>
+                                    <li><a href="colors.html#mdl-alt-colors">Gift cards</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="dropdown">
+                                <a href="typography.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <i class="glyph glyph-chevron-down-2"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="typography.html">Software &amp; services</a></li>
+                                    <li><a href="typography.html#fonts">Devices &amp; Xbox</a></li>
+                                    <li><a href="typography.html#sizes">For business</a></li>
+                                    <li><a href="typography.html#headings">For developers &amp; IT pros</a></li>
+                                    <li><a href="typography.html#subheadings">For students &amp; educators</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="dropdown">
+                                <a href="layout.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support <i class="glyph glyph-chevron-down-2"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="layout.html">Windows</a></li>
+                                    <li><a href="layout.html#page-header">Office</a></li>
+                                    <li><a href="layout.html#grid">Surface</a></li>
+                                    <li><a href="layout.html#grid-small-gutters">Xbox</a></li>
+                                    <li><a href="layout.html#spacers">Windows phone</a></li>
+                                    <li><a href="layout.html#spacers">By resource</a></li>
+                                    <li><a href="layout.html#spacers">Security &amp; updates</a></li>
+                                    <li><a href="layout.html#spacers">Popular topics</a></li>
+                                    <li><a href="layout.html#spacers">Sales &amp; orders</a></li>
+                                    <li><a href="layout.html#spacers">Contact us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                       
+                        <ul class="nav navbar-nav navbar-right">
+                            <% if (!user) { %>
+
+                            <li><a href="#">Register</a></li>
+                            <li><a href="/account/login">Log in</a></li>
+                            <% } else {%>
+                            
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Log out</a></li>
+                            <% } %>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="navbar-local color-fill-accent-vivid-high theme-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="glyph glyph-hamburger"></i>
+                        </button>
+    
+                        <a href="/" class="navbar-brand">
+                            <img src="images/devstrap_white.svg" alt="Winstrap" height="29" />
+                        </a>
+    
+    
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+    
+    
+    
+    
+    
+    
+    
+    <div class="modal modal-center" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="glyph glyph-cancel" aria-hidden="true"></i>
+                    </button>
+                    <h4 class="modal-title" id="changelog-label">Changelog</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt class="m-t-sm">0.5.11</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Added 5 new glyphs to the symbols font.</li>
+                                <li>Updated Bootstrap to v3.3.7.</li>
+                                <li>Added <a href="components.html#entity-list">Entity list</a> and <a href="controls.html#putbox">Put box.</a></li>
+                                <li>Added <code>!important</code> to spacer classes.</li>
+                                <li>Bug fixes.</li>
+                            </ul>
+                        </dd>
+    
+                        <dt class="m-t-sm">0.5.8</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Added default styling for <code>&lt;pre&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>.</li>
+                                <li>Fixed Jumbotron max-width issue on wide screen width.</li>
+                                <li>Navbar styling bug fixes.</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.5.7</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Updated glyph fonts. Glyph style is now aligned with Windows 10.</li>
+                                <li>Added new <a href="typography.html#glyphs">glyphs</a>.</li>
+                                <li>Removed fixed width from <code>.container</code> layout.</li>
+                                <li>Prebuilt and minified CSS files. NPM and Bower packages now come with prebuilt <code>dist</code> folder and minified CSS files.</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.5.6</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Simplified <a href="components.html#jumbotron">Jumbotron</a>.</li>
+                                <li>Added <code>.compressed</code> option to <a href="controls.html#navs">Navbar</a>.</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.5.5</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Big update to <a href="controls.html#navs">Navbar</a> allowing two navbars to stack.</li>
+                                <li>Added variable font path with <code>!default</code> declaration to enable you to set the path based on your project needs</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.5.3</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Added <a href="controls.html#side-nav">side-nav</a> control.</li>
+                                <li>Moved bower to devDependency in package.json.</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.4.12</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Updated toggle switch, tooltip, popover, and link button.</li>
+                                <li>Added color themes to <code>&lt;a&gt;</code> and fixed states.</li>
+                                <li>Changed color theme classes.</li>
+                                <li>Updated breadcrumb styling.</li>
+                                <li>Changed font-family variable names.</li>
+                                <li>Updated glyphs font path.</li>
+                                <li>Fixed checkbox glyph issue.</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.4.9</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Typography:</li>
+                                <li>Updated type ramp, classes, mixins, and functions.</li>
+                                <li>Added type controls (headings, subheadings, paragraphs, and captions).</li>
+                                <li>Glyphs:</li>
+                                <li>Changed glyph names to be more semantic.</li>
+                                <li>Added glyph function to get a glyph's unicode value.</li>
+                                <li>Other changes:</li>
+                                <li>Added Navbar component</li>
+                                <li>Updated Dropdown control</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt class="m-t-sm">0.4.4</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Updates and fixes for:</li>
+                                <li><a href="typography.html#fonts">Responsive type</a></li>
+                                <li><a href="controls.html#buttons">Push buttons</a></li>
+                                <li><a href="controls.html#buttons">Toggle buttons</a></li>
+                                <li><a href="controls.html#toggle-switch">Toggle switch</a></li>
+                                <li><a href="components.html#back-to-top">Back-to-top button</a></li>
+                                <li><a href="controls.html#forms">Select box</a></li>
+                                <li><a href="alerts.html">Alerts</a></li>
+                                <li><a href="components.html#tables">Tables</a></li>
+                                <li><a href="components.html#jumbotron">Jumbotron and highlight bar</a></li>
+                                <li><a href="components.html#pagination">Pagination</a></li>
+                                <li><a href="components.html#pager">Pager</a></li>
+                                <li>Default <code>&lt;p&gt;</code> spacing</li>
+                                <li>Remove MDL 1.0 controls and components</li>
+                            </ul>
+                        </dd>
+    
+                        <dt class="m-t-sm">0.4.0</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>New colors and color naming that reflect the latest MDL colors.</li>
+                                <li>Remove <code>win-</code> prefix from class and variable names.</li>
+                            </ul>
+                        </dd>
+    
+                        <dt class="m-t-sm">0.3.2</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Rename to Winstrap.</li>
+                            </ul>
+                        </dd>
+    
+                        <dt class="m-t-sm">0.1.1</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Add <code>win-</code> prefix to:</li>
+                                <li><a href="components.html#list-items">list items</a></li>
+                                <li><a href="components.html#refine-list">refine list</a></li>
+                                <li><a href="typography.html#fonts">typography utilities</a></li>
+                                <li><a href="tabs.html">media browser component</a></li>
+                                <li><a href="components.html#back-to-top">back to top component</a></li>
+                                <li><a href="alerts.html">alert stack component</a></li>
+                                <li><a href="layout.html#section">section component</a></li>
+                                <li>Extend the Bootstrap grid with a <a href="layout.html#grid-small-gutters">small gutter option</a>.</li>
+                                <li>Add a <a href="images/bootstrap-winjs.png">placeholder logo</a>.</li>
+                            </ul>
+                        </dd>
+    
+                        <dt class="m-t-sm">0.1.0</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li>Initialize bootstrap-winjs.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active">
+            
+        </li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+       <div class="item active">
+           <div class="jumbotron theme-light">
+               <div class="container">
+                   <div class="row">
+                       
+                       <div class="col-md-12 ">
+                           <div class="type-h3">
+                               Xbox for Christmas
+                           </div>
+                           <div class="type-sh3">
+                               Make the holidays special with Xbox
+                           </div>
+                           <p>Espresso served best with whole milk. Dripper aromatic sugar beans steamed breve half and half. Pumpkin spice and kopi-luwak seasonal, mug, java lungo mazagran ristretto and body espresso. Macchiato doppio pumpkin spice sit strong bar shop lungo trifecta.</p>
+                           <div class="btn-group">
+                               <button class="btn btn-primary" href="#">Buy Xbox</button>
+                               <button class="btn btn-secondary" href="#">Read more</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <div class="item">
+            <div class="jumbotron theme-light">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-12 ">
+                            <div class="type-h3">
+                                Xbox 0 for Christmas
+                            </div>
+                            <div class="type-sh3">
+                                Make the holidays special with Xbox
+                            </div>
+                            <p>Espresso served best with whole milk. Dripper aromatic sugar beans steamed breve half and half. Pumpkin spice and kopi-luwak seasonal, mug, java lungo mazagran ristretto and body espresso. Macchiato doppio pumpkin spice sit strong bar shop lungo trifecta.</p>
+                            <div class="btn-group">
+                                <button class="btn btn-primary" href="#">Buy Xbox</button>
+                                <button class="btn btn-secondary" href="#">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="jumbotron theme-light">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-12 ">
+                            <div class="type-h3">
+                                Xbox 1 for Christmas
+                            </div>
+                            <div class="type-sh3">
+                                Make the holidays special with Xbox
+                            </div>
+                            <p>Espresso served best with whole milk. Dripper aromatic sugar beans steamed breve half and half. Pumpkin spice and kopi-luwak seasonal, mug, java lungo mazagran ristretto and body espresso. Macchiato doppio pumpkin spice sit strong bar shop lungo trifecta.</p>
+                            <div class="btn-group">
+                                <button class="btn btn-primary" href="#">Buy Xbox</button>
+                                <button class="btn btn-secondary" href="#">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control v-center" href="#myCarousel" role="button" data-slide="prev">
+        <span class=" glyph glyph-chevron-left "></span>
+
+
+    </a>
+    <a class="right carousel-control v-center" href="#myCarousel" role="button" data-slide="next">
+       <span class=" glyph glyph-chevron-right "></span>
+    </a>
+</div>
+
+<div class="container ">
+
+<div class="row">
+        <div class="col-md-8">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-8">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+       </div>
+        <div class="col-md-8">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+</div>
+<hr/>
+<footer class="color-bg-dark-neutral-mid theme-dark color-type-primary-alt">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <p>
+                © Copyright 2017 <b>DEVPLAY</b>. All Rights Reserved <a href="http://bonganimbigi.com">Bongani Mbigi </a>.
+            </p>
+        </div>
+    </div>
+<hr/>
+</footer>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/app.js"></script><script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script></body>
+</html>

@@ -41,6 +41,7 @@
     <Compile Include="public\js\lib\bootstrap.min.js" />
     <Compile Include="public\js\lib\jquery-3.1.1.min.js" />
     <Compile Include="public\js\main.js" />
+    <Content Include="env.PRODUCTION" />
     <Content Include="package.json" />
     <Content Include="public\css\lib\bootstrap-social.scss" />
     <Content Include="public\css\lib\bootstrap\bootstrap.scss" />
@@ -170,9 +171,36 @@
     <Content Include="public\fonts\FontAwesome.otf" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\index.pug" />
+    <Content Include="views\account\forgot.pug" />
+    <Content Include="views\account\login.pug" />
+    <Content Include="views\account\profile.pug" />
+    <Content Include="views\account\reset.pug" />
+    <Content Include="views\account\signup.pug" />
+    <Content Include="views\api\aviary.pug" />
+    <Content Include="views\api\bitgo.pug" />
+    <Content Include="views\api\clockwork.pug" />
+    <Content Include="views\api\facebook.pug" />
+    <Content Include="views\api\foursquare.pug" />
+    <Content Include="views\api\github.pug" />
+    <Content Include="views\api\google-maps.pug" />
+    <Content Include="views\api\index.pug" />
+    <Content Include="views\api\instagram.pug" />
+    <Content Include="views\api\lastfm.pug" />
+    <Content Include="views\api\linkedin.pug" />
+    <Content Include="views\api\lob.pug" />
+    <Content Include="views\api\nyt.pug" />
+    <Content Include="views\api\paypal.pug" />
+    <Content Include="views\api\pinterest.pug" />
+    <Content Include="views\api\scraping.pug" />
+    <Content Include="views\api\steam.pug" />
+    <Content Include="views\api\stripe.pug" />
+    <Content Include="views\api\tumblr.pug" />
+    <Content Include="views\api\twilio.pug" />
+    <Content Include="views\api\twitter.pug" />
+    <Content Include="views\api\upload.pug" />
+    <Content Include="views\contact.pug" />
+    <Content Include="views\home.ejs" />
     <Content Include="views\layout.pug" />
-    <Content Include="views\error.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -199,8 +227,14 @@
     <Folder Include="public\js\lib\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="views\" />
+    <Folder Include="views\account\" />
+    <Folder Include="views\api\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="views\partials\flash.pug" />
+    <Content Include="views\partials\footer.pug" />
+    <Content Include="views\partials\header.pug" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="bin\ChangeConfig.ps1" />
